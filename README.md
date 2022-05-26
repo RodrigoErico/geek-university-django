@@ -1,2 +1,2 @@
-# geek-university-django
-Programação Web com Python e Django Framework Essencial
+# Geek University Django
+Curso: Programação Web com Python e Django Framework Essencial
