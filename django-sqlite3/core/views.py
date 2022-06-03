@@ -1,7 +1,10 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'index.html')
+    context = {
+        'main_page': 'Programação em Django'
+    }
+    return render(request, 'index.html', context)
 
 
 def contact(request):
