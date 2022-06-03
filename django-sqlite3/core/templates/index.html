@@ -1,5 +1,6 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,24 @@
 <body>
   <h1>Página index</h1>
   <h2>{{ main_page }}</h2>
-  <h3>{{ login }}</h3>
+  <h3>Usuário está logado: {{ login }}</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Preço</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for product in products%}
+      <tr>
+        <td><a href="{% url 'product' product.id %}">{{ product.name }}</a></td>
+        <td>{{ product.price }}</td>
+      {% endfor %}
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <button onclick="test()">Clique aqui</button>
 </body>
 </html>
