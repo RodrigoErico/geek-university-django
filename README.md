@@ -1,6 +1,6 @@
 Curso: Programação Web com Python e Django Framework Essencial
 ## Projeto 1 - Cadastro de Produtos
-### Tecnologia utilizadas:
+### Tecnologias utilizadas:
 - Banco de dados SQLite
 - Liguagem de Programação Python
 - Framework Django
